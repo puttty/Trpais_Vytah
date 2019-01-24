@@ -111,7 +111,7 @@ void elevatorStopped(){
     if (direction == 0){
         led_free = !led_free;
            if ((floors[actualFloor-1] == true)||(floors[actualFloor-2] == true) ||(floors[actualFloor-3] == true)||(floors[actualFloor-4] == true) ){//hladaj najblizsiu cestu smerom nadol
-            if((waitVar % 11) == 0){ //cakaj
+            if((waitVar % 5) == 0){ //cakaj
              ledOutOff(actualFloor);
              ledInOff(actualFloor);
              direction = -1;
@@ -119,7 +119,7 @@ void elevatorStopped(){
              DownSpeedMotor();
             }                   
            }else if ((floors[actualFloor+1] == true)||(floors[actualFloor+2] == true) ||(floors[actualFloor+3] == true) ||(floors[actualFloor+4] == true)){    //hladaj najblizsiu cestu smerom nahor
-             if((waitVar % 11) == 0){//cakaj
+             if((waitVar % 5) == 0){//cakaj
               ledOutOff(actualFloor);
               ledInOff(actualFloor);
               direction = 1;
@@ -152,7 +152,7 @@ void initSys(){
        
        CabinLock(); //zamkni kabinu
        DownSpeedMotor();//smer nadol
-       wait(0.3);//pockaj
+       wait(0.25);//pockaj
        floors[0] = true; //nastav priznak poschodia 0 na true
       
        ledOutOn(0); //zasviet led vonku na 0

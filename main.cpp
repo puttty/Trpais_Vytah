@@ -39,9 +39,7 @@ int main()
     initAccele();//inicializacia Acc
     unsigned char emergencyClear[] = {0xA0,0xf,0x00,0x01,0x00};
     sendPacket(emergencyClear,(sizeof(emergencyClear)/sizeof(emergencyClear[0])));
-/*
-* Nekonecna slucka
-*/
+
     while(1){}
             
 }
