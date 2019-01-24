@@ -205,7 +205,7 @@ void setLeds(int floor){
     ledOutOn(floor);
 }
 /*!
- * Posle packet s datami pre zapnutie svetla na danom poschodi vonku aj v kabine.
+ * Posle packet s datami pre vypnutie svetla na danom poschodi vonku aj v kabine.
  * @param floor Cislo poschodia. Iba celociselne hodnoty 0,1,2,3,4.
  */
 void disableLeds(int floor){

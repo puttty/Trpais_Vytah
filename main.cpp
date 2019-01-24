@@ -3,7 +3,7 @@
 #include "Communication.h"
 #include "Elevator.h"
 /*
- * Inicializacia RGB Led Diody. Cervena. Ak nastane mergency break, v dosledku padu kabiny, zasvieti.
+ * Inicializacia RGB Led Diody. Cervena. Ak nastane emergency break, v dosledku padu kabiny, zasvieti.
  */
 DigitalOut led_emergency(LED_RED);
 

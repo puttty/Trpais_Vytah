@@ -43,7 +43,7 @@ Ticker watchStop;
  */
 Ticker watchStopped;
 /*!
- * Ticker pre informacneho displeja vytahu.
+ * Ticker pre informacny displej vytahu.
  */
 Ticker watchDisp;
 
